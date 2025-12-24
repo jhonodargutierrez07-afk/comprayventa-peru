@@ -6,130 +6,230 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body{font-family:Arial;margin:0;background:#f4f6f8}
-header{background:#0a2a66;color:white;padding:30px;text-align:center}
-nav{background:#ff7a00;padding:12px;text-align:center}
-nav a{color:white;margin:0 15px;text-decoration:none;font-weight:bold}
-.container{padding:30px}
-h2{color:#0a2a66;margin-top:50px}
-.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:20px}
-.product{background:white;padding:15px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
-.product img{width:100%;height:180px;object-fit:cover;border-radius:6px}
-.price{color:#ff7a00;font-size:18px;font-weight:bold}
-.product a{display:block;background:#25D366;color:white;text-align:center;padding:12px;border-radius:6px;text-decoration:none;font-weight:bold;margin-top:10px}
-.badge{background:#ff7a00;color:white;padding:4px 8px;font-size:12px;border-radius:4px}
-footer{background:#0a2a66;color:white;text-align:center;padding:15px;margin-top:50px}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:22px;text-decoration:none}
+/* === BASE === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #eef2f7;
+    color: #333;
+}
+
+/* === TOP BAR === */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 8px;
+}
+
+/* === NAV === */
+nav {
+    background: #ff7a00;
+    padding: 12px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* === SECTION TITLES === */
+h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-top: 50px;
+    font-size: 2.2em;
+}
+
+/* === PRODUCT GRID === */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+    padding: 25px;
+}
+
+/* === PRODUCT CARD === */
+.product {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+.product img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.price {
+    color: #ff7a00;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.product a {
+    display: block;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 12px;
+}
+.badge {
+    background: #ff7a00;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+/* === SOCIAL FLOAT === */
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 26px;
+    text-decoration: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* === FOOTER === */
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Importaciones Perú</h1>
-<p>Electrónica · Pokémon · Hogar · Juguetería</p>
+    <h1>Importaciones Perú</h1>
+    <p>Tiendas de Electrónica · Pokémon · Hogar · Juguetería</p>
 </header>
 
 <nav>
-<a href="#electronica">Electrónica</a>
-<a href="#pokemon">Pokémon</a>
-<a href="#hogar">Hogar</a>
-<a href="#juguetes">Juguetería</a>
+    <a href="#electronica">Electrónica</a>
+    <a href="#pokemon">Pokémon</a>
+    <a href="#hogar">Hogar</a>
+    <a href="#juguetes">Juguetería</a>
 </nav>
 
-<div class="container">
-
-<!-- ELECTRÓNICA -->
+<!-- === ELECTRÓNICA === -->
 <h2 id="electronica">🔌 Electrónica</h2>
 <div class="products">
-<div class="product">
-<span class="badge">MÁS VENDIDO</span>
-<img src="https://images.unsplash.com/photo-1585386959984-a41552231692">
-<h3>Audífonos Bluetooth</h3>
-<p class="price">S/ 59.00</p>
-<a href="https://wa.me/51927677454">Comprar</a>
-</div>
+    <div class="product">
+        <span class="badge">Más Vendido</span>
+        <img src="https://images.pexels.com/photos/3394669/pexels-photo-3394669.jpeg">
+        <h3>Audífonos Bluetooth</h3>
+        <p class="price">S/ 59.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/277064/pexels-photo-277064.jpeg">
+        <h3>Smartwatch Deportivo</h3>
+        <p class="price">S/ 99.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/3945685/pexels-photo-3945685.jpeg">
+        <h3>Cargador Rápido USB</h3>
+        <p class="price">S/ 39.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
 </div>
 
-<!-- POKÉMON -->
+<!-- === POKÉMON === -->
 <h2 id="pokemon">🃏 Cartas Pokémon</h2>
 <div class="products">
-
-<div class="product">
-<span class="badge">1999</span>
-<img src="https://images.unsplash.com/photo-1627856014754-2907e2350a1c">
-<h3>Pokémon Base Set</h3>
-<p class="price">Desde S/ 120</p>
-<p>Primera generación (1999)</p>
-<a href="https://wa.me/51927677454">Consultar</a>
+    <div class="product">
+        <span class="badge">1999</span>
+        <img src="https://images.pexels.com/photos/11067660/pexels-photo-11067660.jpeg">
+        <h3>Pokémon Base Set</h3>
+        <p class="price">Desde S/ 120</p>
+        <a href="https://wa.me/51927677454">Consultar</a>
+    </div>
+    <div class="product">
+        <span class="badge">2016</span>
+        <img src="https://images.pexels.com/photos/11067785/pexels-photo-11067785.jpeg">
+        <h3>Pokémon XY</h3>
+        <p class="price">Desde S/ 90</p>
+        <a href="https://wa.me/51927677454">Consultar</a>
+    </div>
+    <div class="product">
+        <span class="badge">2024</span>
+        <img src="https://images.pexels.com/photos/11067742/pexels-photo-11067742.jpeg">
+        <h3>Scarlet & Violet</h3>
+        <p class="price">Desde S/ 35</p>
+        <a href="https://wa.me/51927677454">Comprar</a>
+    </div>
 </div>
 
-<div class="product">
-<span class="badge">2016</span>
-<img src="https://images.unsplash.com/photo-1627856014872-77a3e2b10a88">
-<h3>Pokémon XY</h3>
-<p class="price">Desde S/ 90</p>
-<p>Colección XY</p>
-<a href="https://wa.me/51927677454">Consultar</a>
-</div>
-
-<div class="product">
-<span class="badge">2024</span>
-<img src="https://images.unsplash.com/photo-1690898093573-4b3d6a98c7a2">
-<h3>Scarlet & Violet</h3>
-<p class="price">Desde S/ 35</p>
-<p>Última generación</p>
-<a href="https://wa.me/51927677454">Comprar</a>
-</div>
-
-</div>
-
-<!-- HOGAR -->
+<!-- === HOGAR === -->
 <h2 id="hogar">🏠 Productos para el Hogar</h2>
 <div class="products">
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
-<h3>Luces LED Decorativas</h3>
-<p class="price">S/ 45.00</p>
-<a href="https://wa.me/51927677454">Comprar</a>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/3769711/pexels-photo-3769711.jpeg">
+        <h3>Luces LED Decorativas</h3>
+        <p class="price">S/ 45.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/895919/pexels-photo-895919.jpeg">
+        <h3>Organizador Multiuso</h3>
+        <p class="price">S/ 35.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
 </div>
 
-<div class="product">
-<img src="https://images.unsplash.com/photo-1583225158299-1b6e44c37c58">
-<h3>Organizador Multiuso</h3>
-<p class="price">S/ 35.00</p>
-<a href="https://wa.me/51927677454">Comprar</a>
-</div>
-
-</div>
-
-<!-- JUGUETERÍA -->
+<!-- === JUGUETERÍA === -->
 <h2 id="juguetes">🧸 Juguetería</h2>
 <div class="products">
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30">
-<h3>Figura Pokémon</h3>
-<p class="price">S/ 49.00</p>
-<a href="https://wa.me/51927677454">Comprar</a>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4">
-<h3>Auto RC</h3>
-<p class="price">S/ 89.00</p>
-<a href="https://wa.me/51927677454">Comprar</a>
-</div>
-
-</div>
-
+    <div class="product">
+        <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg">
+        <h3>Figura Pokémon</h3>
+        <p class="price">S/ 49.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
+    <div class="product">
+        <img src="https://images.pexels.com/photos/163077/remote-control-toy-car-toy-car-163077.jpeg">
+        <h3>Auto RC</h3>
+        <p class="price">S/ 89.00</p>
+        <a href="https://wa.me/51927677454">Comprar por WhatsApp</a>
+    </div>
 </div>
 
 <a class="whatsapp" href="https://wa.me/51927677454">💬</a>
 
 <footer>
-<p>© 2025 Importaciones Perú</p>
+    <p>© 2025 Importaciones Perú · Todos los derechos reservados</p>
 </footer>
 
 </body>
