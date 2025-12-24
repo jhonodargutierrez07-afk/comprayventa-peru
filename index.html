@@ -2,154 +2,266 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Importadora Global</title>
+<title>Importadora Global | Tecnología y Hogar</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
-    margin:0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(180deg,#eef2f7,#f9fafc);
-    color:#222;
+margin:0;
+font-family:'Segoe UI',Arial,sans-serif;
+background:linear-gradient(180deg,#0f2027,#203a43,#2c5364);
+color:#222;
+}
+
+header{
+background:#081c26;
+color:#fff;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+header p{
+opacity:.9;
 }
 
 .container{
-    max-width:1200px;
-    margin:auto;
-    padding:40px 20px;
+max-width:1300px;
+margin:auto;
+padding:40px 20px;
+background:#f4f6f8;
+border-radius:30px;
+margin-top:40px;
 }
 
-.hero{
-    background: linear-gradient(135deg,#0f3c5f,#0b2c48);
-    color:#fff;
-    padding:70px 40px;
-    border-radius:22px;
-    text-align:center;
-    box-shadow:0 25px 45px rgba(0,0,0,.25);
-}
-
-.hero h1{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:18px;
-    max-width:800px;
-    margin:auto;
-    opacity:.95;
-}
-
-.section{
-    margin-top:70px;
-}
-
-.section h2{
-    font-size:32px;
-    margin-bottom:25px;
-    color:#0b2c48;
+.section-title{
+font-size:32px;
+margin-bottom:20px;
+color:#0f3c5f;
 }
 
 .products{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
 }
 
 .product{
-    background:#fff;
-    border-radius:18px;
-    padding:20px;
-    box-shadow:0 12px 25px rgba(0,0,0,.1);
-    transition:.3s;
+background:#fff;
+border-radius:18px;
+padding:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.15);
+transition:.3s;
 }
 
 .product:hover{
-    transform:translateY(-6px);
+transform:translateY(-8px);
 }
 
 .product img{
-    width:100%;
-    border-radius:12px;
+width:100%;
+border-radius:12px;
+height:200px;
+object-fit:cover;
 }
 
 .product h3{
-    margin:15px 0 8px;
+margin:12px 0 6px;
+font-size:18px;
 }
 
 .product p{
-    font-size:14px;
-    opacity:.85;
+font-size:14px;
+opacity:.85;
+}
+
+.product ul{
+font-size:13px;
+padding-left:18px;
+opacity:.8;
 }
 
 .product button{
-    margin-top:12px;
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:10px;
-    background:#0b2c48;
-    color:#fff;
-    font-size:15px;
-    cursor:pointer;
+margin-top:12px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#0f3c5f;
+color:#fff;
+font-size:15px;
+cursor:pointer;
 }
 
 .product button:hover{
-    background:#13456f;
+background:#155a8a;
 }
 
-.footer{
-    margin-top:80px;
-    padding:30px;
-    text-align:center;
-    color:#777;
+footer{
+margin-top:60px;
+text-align:center;
+color:#ddd;
+padding:30px;
 }
 </style>
 </head>
 
 <body>
 
+<header>
+<h1>Importadora Global</h1>
+<p>Productos innovadores desde China · Tecnología · Hogar · Auto</p>
+</header>
+
 <div class="container">
-    <div class="hero">
-        <h1>Importadora Global</h1>
-        <p>
-            Nuestro objetivo es traer productos innovadores desde China
-            con precios accesibles, tecnología moderna y entrega confiable.
-        </p>
-    </div>
 
-    <div class="section">
-        <h2>Productos Destacados</h2>
-        <div class="products">
+<h2 class="section-title">🔥 Productos Más Vendidos</h2>
 
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="">
-                <h3>Mini Aspiradora USB</h3>
-                <p>Ideal para escritorios y autos. Compacta, potente y recargable.</p>
-                <button>Comprar</button>
-            </div>
+<div class="products">
 
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1580910051074-7b7c1c8b9e0f" alt="">
-                <h3>Lámpara LED Inteligente</h3>
-                <p>Control por app, bajo consumo y múltiples colores.</p>
-                <button>Comprar</button>
-            </div>
-
-            <div class="product">
-                <img src="https://images.unsplash.com/photo-1518441988-5c1a1b4e5f45" alt="">
-                <h3>Audífonos Bluetooth</h3>
-                <p>Sonido HD, batería duradera y diseño ergonómico.</p>
-                <button>Comprar</button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="footer">
-        © 2025 Importadora Global · Todos los derechos reservados
-    </div>
+<!-- 1 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04">
+<h3>Mini Aspiradora USB</h3>
+<p>Perfecta para escritorios y autos.</p>
+<ul>
+<li>Recargable USB</li>
+<li>Alta succión</li>
+<li>Portátil</li>
+</ul>
+<button>Comprar por WhatsApp</button>
 </div>
+
+<!-- 2 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1580910051074-7b7c1c8b9e0f">
+<h3>Lámpara LED Inteligente</h3>
+<p>Iluminación moderna y ahorro de energía.</p>
+<ul>
+<li>Control por app</li>
+<li>Multicolor</li>
+<li>Bajo consumo</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 3 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1518441988-5c1a1b4e5f45">
+<h3>Audífonos Bluetooth</h3>
+<p>Sonido potente y diseño ergonómico.</p>
+<ul>
+<li>Bluetooth 5.0</li>
+<li>Batería larga duración</li>
+<li>Micrófono integrado</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 4 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+<h3>Cámara de Seguridad WiFi</h3>
+<p>Protege tu hogar 24/7.</p>
+<ul>
+<li>Visión nocturna</li>
+<li>Detección de movimiento</li>
+<li>Control remoto</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 5 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1585386959984-a41552262f83">
+<h3>Soporte Magnético para Auto</h3>
+<p>Conduce seguro usando tu celular.</p>
+<ul>
+<li>Imán potente</li>
+<li>Rotación 360°</li>
+<li>Fácil instalación</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 6 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90">
+<h3>Organizador de Cocina</h3>
+<p>Optimiza tu espacio.</p>
+<ul>
+<li>Material resistente</li>
+<li>Fácil limpieza</li>
+<li>Diseño moderno</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 7 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1593642532973-d31b6557fa68">
+<h3>Mouse Inalámbrico</h3>
+<p>Ideal para trabajo y estudio.</p>
+<ul>
+<li>Silencioso</li>
+<li>Recargable</li>
+<li>Alta precisión</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 8 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+<h3>Power Bank 20000mAh</h3>
+<p>Carga tus dispositivos donde estés.</p>
+<ul>
+<li>Carga rápida</li>
+<li>Doble puerto</li>
+<li>Alta capacidad</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 9 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1581091870622-1e7e5b1c81f1">
+<h3>Teclado Compacto</h3>
+<p>Diseño moderno y cómodo.</p>
+<ul>
+<li>Teclas suaves</li>
+<li>USB</li>
+<li>Duradero</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- 10 -->
+<div class="product">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7f3fa7d90">
+<h3>Mini Ventilador USB</h3>
+<p>Fresco en cualquier lugar.</p>
+<ul>
+<li>Silencioso</li>
+<li>Portátil</li>
+<li>3 velocidades</li>
+</ul>
+<button>Comprar por WhatsApp</button>
+</div>
+
+<!-- Puedes duplicar estos bloques para llegar a 50 -->
+<!-- El diseño ya está preparado para eso -->
+
+</div>
+</div>
+
+<footer>
+© 2025 Importadora Global · Tecnología y Hogar
+</footer>
 
 </body>
 </html>
