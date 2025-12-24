@@ -3,131 +3,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Importadora Directa Perú | Tecnología Global desde 2018</title>
-<meta name="description" content="Importadora tecnológica peruana con más de 7 años en el mercado. Seguridad, hogar, automatización y tecnología seleccionada con criterio profesional.">
+<title>Importadora Directa Perú | Tecnología, Hogar y Soluciones</title>
 
 <style>
 :root{
---bg:#050b17;
---bg2:#0b1220;
---card:#111827;
---border:#1f2937;
---text:#e5e7eb;
---muted:#9ca3af;
---accent:#2563eb;
+--main:#c2410c;
+--dark:#1f2937;
+--light:#fdf6ee;
+--gray:#6b7280;
 }
 *{box-sizing:border-box}
 body{
 margin:0;
-font-family:Inter,Segoe UI,Arial,sans-serif;
-background:var(--bg);
-color:var(--text);
+font-family:Arial,Helvetica,sans-serif;
+background:var(--light);
+color:var(--dark);
 line-height:1.6;
 }
+a{text-decoration:none;color:var(--main)}
 header{
 position:fixed;
-top:0;
-width:100%;
-background:rgba(5,11,23,.96);
-border-bottom:1px solid var(--border);
+top:0;width:100%;
+background:#fff;
+border-bottom:1px solid #e5e7eb;
 z-index:1000;
 }
 nav{
-max-width:1500px;
+max-width:1400px;
 margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 24px;
+padding:16px;
 }
-nav strong{font-size:18px}
-nav a{
-color:var(--text);
-text-decoration:none;
-margin-left:26px;
-font-weight:600;
+nav strong{font-size:20px}
+nav a{margin-left:20px;font-weight:700}
+.section{
+max-width:1400px;
+margin:auto;
+padding:120px 20px;
 }
-nav a:hover{color:var(--accent)}
 .hero{
-padding:200px 20px 140px;
-background:linear-gradient(180deg,#020617,#050b17);
+background:linear-gradient(to right,#fff7ed,#ffedd5);
+padding:160px 20px 120px;
 text-align:center;
 }
-.hero h1{
-font-size:56px;
-max-width:1200px;
-margin:auto;
-}
-.hero p{
-max-width:950px;
-margin:35px auto;
-font-size:21px;
-color:var(--muted);
-}
+.hero h1{font-size:42px;margin-bottom:20px}
+.hero p{font-size:18px;max-width:900px;margin:auto}
 .btn{
 display:inline-block;
-padding:16px 30px;
-background:var(--accent);
-color:white;
-border-radius:8px;
-text-decoration:none;
+padding:14px 26px;
+background:var(--main);
+color:#fff;
+border-radius:10px;
 font-weight:700;
-}
-.section{
-max-width:1500px;
-margin:auto;
-padding:140px 24px;
-}
-.section h2{
-font-size:44px;
-margin-bottom:40px;
-}
-.section p{
-max-width:1000px;
-font-size:19px;
-color:var(--muted);
+margin-top:20px;
 }
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:45px;
-margin-top:70px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
 }
 .card{
-background:var(--card);
-border:1px solid var(--border);
+background:#fff;
 border-radius:16px;
-padding:34px;
+padding:26px;
+border:1px solid #e5e7eb;
 }
-.card h3{font-size:22px;margin-top:0}
-.card ul{padding-left:18px;font-size:14px;color:var(--muted)}
-.manifesto{
-background:linear-gradient(135deg,#020617,#111827);
-border-left:6px solid var(--accent);
-padding:60px;
-margin:120px 0;
-font-size:22px;
-}
-.badges{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-.badge{
-background:var(--bg2);
-border:1px solid var(--border);
-padding:20px 26px;
-border-radius:14px;
-font-weight:600;
-}
+.card h3{margin-top:0}
 footer{
-background:#020617;
-padding:80px 20px;
+background:#111827;
+color:#fff;
+padding:60px 20px;
 text-align:center;
-color:var(--muted);
-font-size:14px;
 }
+
+/* MODAL PRODUCTO */
+#modal{
+display:none;
+position:fixed;
+top:0;left:0;
+width:100%;height:100%;
+background:rgba(0,0,0,.7);
+z-index:3000;
+}
+.modal-box{
+background:#fff;
+max-width:1200px;
+margin:40px auto;
+border-radius:18px;
+padding:30px;
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:30px;
+position:relative;
+}
+.close{
+position:absolute;
+right:20px;top:10px;
+font-size:28px;
+cursor:pointer;
+}
+.img{
+height:360px;
+background:#f3f4f6;
+border-radius:14px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#6b7280;
+}
+.cart{
+border:1px solid #e5e7eb;
+border-radius:14px;
+padding:20px;
+}
+.cart button{width:100%;margin-top:10px}
 </style>
 </head>
 
@@ -138,172 +129,139 @@ font-size:14px;
 <strong>IMPORTADORA DIRECTA PERÚ</strong>
 <div>
 <a href="#inicio">Inicio</a>
-<a href="#empresa">Empresa</a>
 <a href="#productos">Productos</a>
+<a href="#china">China</a>
+<a href="#peru">Perú</a>
 <a href="#noticias">Noticias</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#contacto">Contacto</a>
 </div>
 </nav>
 </header>
 
 <section class="hero" id="inicio">
-<h1>Tecnología global seleccionada con criterio profesional desde 2018</h1>
+<h1>Vive mejor. Compra inteligente. Importa directo.</h1>
 <p>
-Somos una importadora tecnológica peruana con años de experiencia acercando innovación
-funcional, segura y confiable a hogares y empresas. No seguimos modas. Analizamos,
-probamos y seleccionamos.
+Somos una importadora peruana que conecta la mejor tecnología y productos del mercado chino
+con hogares y negocios en el Perú, eliminando intermediarios y ofreciendo precios reales.
 </p>
-<a href="#productos" class="btn">Explorar catálogo</a>
-</section>
-
-<section class="section" id="empresa">
-<h2>Una empresa con criterio, no improvisación</h2>
-<p>
-Desde nuestros inicios entendimos que el problema no era la falta de productos,
-sino el exceso de opciones sin valor real. Nuestra empresa nace para filtrar el
-ruido del mercado y ofrecer solo tecnología que cumpla una función clara.
-</p>
-
-<div class="manifesto">
-No importamos por volumen.<br>
-Importamos por impacto.<br><br>
-Cada producto que ofrecemos responde a una necesidad real y ha pasado por un proceso
-de evaluación técnica y funcional.
-</div>
-
-<div class="badges">
-<div class="badge">✔ 7+ años en el mercado</div>
-<div class="badge">✔ Proveedores internacionales</div>
-<div class="badge">✔ Atención directa en Perú</div>
-<div class="badge">✔ Selección tecnológica</div>
-</div>
+<a class="btn" href="#productos">Ver productos</a>
 </section>
 
 <section class="section" id="productos">
-<h2>Catálogo de productos tecnológicos</h2>
+<h2>Productos destacados</h2>
+<div class="grid" id="productosGrid"></div>
+</section>
+
+<section class="section" id="china">
+<h2>Producción en China 🇨🇳</h2>
 <p>
-Nuestro portafolio está organizado por categorías estratégicas, priorizando seguridad,
-automatización, eficiencia energética y soluciones inteligentes para el hogar y
-entornos profesionales.
+Trabajamos con fábricas certificadas en polos industriales de China, donde se desarrollan
+productos tecnológicos bajo estándares internacionales de exportación.
 </p>
-
-<div class="grid">
-
-<!-- PRODUCTOS ESTRELLA -->
-<div class="card">
-<h3>Lámpara LED Inteligente con Sensor</h3>
 <p>
-Solución desarrollada para automatizar la iluminación y reducir el consumo energético
-en espacios residenciales y comerciales.
+Nuestros aliados producen para mercados globales y ahora esos mismos productos llegan
+directamente al Perú.
 </p>
-<ul>
-<li>Sensor de movimiento inteligente</li>
-<li>Batería recargable USB</li>
-<li>Instalación sin cableado</li>
-<li>Uso interior</li>
-</ul>
-<a class="btn" href="https://wa.me/51927677454">Comprar</a>
-</div>
+<div class="card">🎥 Video: Proceso real de fabricación (espacio listo para YouTube)</div>
+</section>
 
-<div class="card">
-<h3>Cámara WiFi de Seguridad HD</h3>
+<section class="section" id="peru">
+<h2>Distribución en Perú 🇵🇪</h2>
 <p>
-Sistema de monitoreo remoto diseñado para control visual permanente desde cualquier
-lugar del mundo.
+Los productos llegan al Perú y se distribuyen desde Lima a todo el país.
 </p>
-<ul>
-<li>Visión nocturna avanzada</li>
-<li>Aplicación móvil dedicada</li>
-<li>Grabación local y en la nube</li>
-<li>Uso residencial y empresarial</li>
-</ul>
-<a class="btn" href="https://wa.me/51927677454">Comprar</a>
-</div>
-
-<div class="card">
-<h3>Regleta Eléctrica Inteligente</h3>
 <p>
-Dispositivo diseñado para proteger equipos electrónicos y optimizar el consumo
-energético.
+📍 Villa Club 3 Manzana P Lote 12  
+📞 +51 927 677 454
 </p>
-<ul>
-<li>Protección contra sobrecarga</li>
-<li>Puertos USB integrados</li>
-<li>Interruptores independientes</li>
-</ul>
-<a class="btn" href="https://wa.me/51927677454">Comprar</a>
-</div>
-
-<!-- CATÁLOGO EXTENSO -->
-<script>
-const productos = [
-"Sensor de Puerta Inteligente","Cerradura Digital","Timbre Inteligente",
-"Enchufe WiFi","Detector de Humo","Router Mesh","Lámpara Solar Exterior",
-"Power Bank Alta Capacidad","Cámara PTZ","Sensor de Temperatura",
-"Panel Solar Portátil","Mini UPS","Interruptor Táctil","Purificador de Aire",
-"Humidificador Inteligente","Medidor de Consumo","Reloj Digital Smart",
-"Alarma Domótica","Control IR Universal","Termostato Inteligente",
-"Cargador GaN","Lámpara Escritorio LED","Soporte Ergonómico",
-"Organizador Tecnológico","Sistema Anti Robo","Detector de Gas",
-"Luces RGB Inteligentes","Switch PoE","Cámara Industrial","Hub Domótico"
-];
-
-productos.forEach(p=>{
-document.write(`
-<div class="card">
-<h3>${p}</h3>
 <p>
-Producto seleccionado bajo criterios de utilidad real, estabilidad técnica y
-compatibilidad con el entorno peruano.
+Atención directa, respaldo local y soporte postventa.
 </p>
-<ul>
-<li>Alta durabilidad</li>
-<li>Diseño funcional</li>
-<li>Aplicación práctica</li>
-</ul>
-<a class="btn" href="https://wa.me/51927677454">Consultar</a>
-</div>
-`);
-});
-</script>
-
-</div>
 </section>
 
 <section class="section" id="noticias">
-<h2>Noticias, lanzamientos y visión tecnológica</h2>
-<p>
-Nuestro equipo analiza constantemente el mercado global para anticipar la llegada de
-nuevas soluciones en automatización, seguridad avanzada, energía portátil y hogares
-inteligentes.
-</p>
-</section>
-
-<section class="section" id="nosotros">
-<h2>Quiénes somos</h2>
-<p>
-Importadora Directa Perú es una empresa peruana con enfoque tecnológico y visión a
-largo plazo. Trabajamos con proveedores internacionales y ofrecemos atención directa
-local, garantizando respaldo real al cliente.
-</p>
-<p>
-<strong>Misión:</strong> Facilitar el acceso a tecnología funcional y confiable.<br>
-<strong>Visión:</strong> Consolidarnos como importadora tecnológica líder en el país.
-</p>
-</section>
-
-<section class="section" id="contacto">
-<h2>Contacto corporativo</h2>
-<p>
-📍 Villa Club 3 Manzana P Lote 12<br>
-📲 <a href="https://wa.me/51927677454" style="color:#60a5fa">+51 927 677 454</a>
-</p>
+<h2>Próximos lanzamientos</h2>
+<div class="grid">
+<div class="card">🔜 Robots domésticos inteligentes</div>
+<div class="card">🔜 Gadgets de ahorro energético</div>
+<div class="card">🔜 Tecnología para seguridad del hogar</div>
+</div>
 </section>
 
 <footer>
-© 2025 Importadora Directa Perú — Tecnología global, criterio local.
+<p>© Importadora Directa Perú</p>
+<p>
+<a href="#">Instagram</a> ·
+<a href="#">Facebook</a> ·
+<a href="#">TikTok</a>
+</p>
 </footer>
+
+<!-- MODAL -->
+<div id="modal">
+<div class="modal-box">
+<span class="close" onclick="cerrar()">✖</span>
+<div id="detalle"></div>
+<div class="cart">
+<h3>Comprar ahora</h3>
+<p><strong>Precio:</strong> S/ 99</p>
+<button class="btn">Agregar al carrito</button>
+<a class="btn" style="display:block;text-align:center;margin-top:10px"
+href="https://wa.me/51927677454">Finalizar por WhatsApp</a>
+</div>
+</div>
+</div>
+
+<script>
+const productos=[
+{
+nombre:"Lámpara LED Inteligente",
+desc:"Iluminación automática con sensor para ahorro energético.",
+historia:"Fabricada en China para mercados internacionales, ahora en Perú.",
+uso:"Hogares, pasillos, garajes.",
+},
+{
+nombre:"Cámara WiFi Full HD",
+desc:"Vigilancia remota desde tu celular.",
+historia:"Tecnología usada en Asia y América.",
+uso:"Casas, tiendas, oficinas.",
+},
+{
+nombre:"Cerradura Digital",
+desc:"Seguridad moderna sin llaves.",
+historia:"Diseñada para ciudades inteligentes.",
+uso:"Departamentos y negocios.",
+}
+];
+
+const grid=document.getElementById("productosGrid");
+productos.forEach((p,i)=>{
+grid.innerHTML+=`
+<div class="card">
+<h3>${p.nombre}</h3>
+<p>${p.desc}</p>
+<button class="btn" onclick="ver(${i})">Ver producto</button>
+</div>`;
+});
+
+function ver(i){
+const p=productos[i];
+document.getElementById("detalle").innerHTML=`
+<div class="img">Imagen real del producto</div>
+<h2>${p.nombre}</h2>
+<p>${p.desc}</p>
+<h4>¿Para qué sirve?</h4>
+<p>${p.uso}</p>
+<h4>Historia</h4>
+<p>${p.historia}</p>
+<h4>Garantía</h4>
+<p>Producto importado con respaldo en Perú.</p>
+`;
+document.getElementById("modal").style.display="block";
+}
+function cerrar(){
+document.getElementById("modal").style.display="none";
+}
+</script>
 
 </body>
 </html>
