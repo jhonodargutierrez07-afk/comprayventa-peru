@@ -1,111 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Importadora Global</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 body{
-  margin:0;
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(180deg,#eef2f7,#f9fafc);
+    margin:0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(180deg,#eef2f7,#f9fafc);
+    color:#222;
 }
 
 .container{
-  max-width:1280px;
-  margin:auto;
-  padding:40px 20px;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
 }
 
 .hero{
-  background: linear-gradient(135deg,#0f3c5f,#0b2c48);
-  color:#fff;
-  padding:60px 40px;
-  border-radius:22px;
-  box-shadow:0 20px 40px rgba(0,0,0,.15);
-  text-align:center;
+    background: linear-gradient(135deg,#0f3c5f,#0b2c48);
+    color:#fff;
+    padding:70px 40px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 25px 45px rgba(0,0,0,.25);
 }
 
 .hero h1{
-  font-size:38px;
-  margin-bottom:10px;
+    font-size:42px;
+    margin-bottom:15px;
 }
 
 .hero p{
-  font-size:18px;
-  opacity:.95;
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+    opacity:.95;
 }
 
-.section-title{
-  margin-top:60px;
-  font-size:26px;
-  color:#0b2c48;
-  border-left:6px solid #0b2c48;
-  padding-left:12px;
+.section{
+    margin-top:70px;
 }
 
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:28px;
-  margin-top:30px;
+.section h2{
+    font-size:32px;
+    margin-bottom:25px;
+    color:#0b2c48;
 }
 
-.card{
-  background:#ffffff;
-  border-radius:18px;
-  padding:18px;
-  box-shadow:0 15px 30px rgba(0,0,0,.08);
-  transition:.3s;
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
 }
 
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 25px 45px rgba(0,0,0,.12);
+.product{
+    background:#fff;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 12px 25px rgba(0,0,0,.1);
+    transition:.3s;
 }
 
-.card img{
-  width:100%;
-  height:200px;
-  object-fit:cover;
-  border-radius:14px;
+.product:hover{
+    transform:translateY(-6px);
 }
 
-.card h3{
-  margin:14px 0 6px;
-  font-size:18px;
-  color:#111;
+.product img{
+    width:100%;
+    border-radius:12px;
 }
 
-.price{
-  font-weight:700;
-  color:#0b2c48;
-  font-size:18px;
+.product h3{
+    margin:15px 0 8px;
 }
 
-.card ul{
-  padding-left:18px;
-  font-size:14px;
-  color:#444;
+.product p{
+    font-size:14px;
+    opacity:.85;
 }
 
-.card a{
-  display:block;
-  margin-top:14px;
-  background:#0b2c48;
-  color:#fff;
-  padding:14px;
-  text-align:center;
-  border-radius:12px;
-  text-decoration:none;
-  font-weight:600;
+.product button{
+    margin-top:12px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#0b2c48;
+    color:#fff;
+    font-size:15px;
+    cursor:pointer;
 }
 
-.card a:hover{
-  background:#145a8d;
+.product button:hover{
+    background:#13456f;
 }
 
-.note{
-  margin-top:60px;
-  padding:20px;
-  background:#fff;
-  border-radius:14px;
-  font-size:14px;
-  color:#555;
-  box-shadow:0 10px 25px rgba(0,0,0,.05);
+.footer{
+    margin-top:80px;
+    padding:30px;
+    text-align:center;
+    color:#777;
 }
 </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="hero">
+        <h1>Importadora Global</h1>
+        <p>
+            Nuestro objetivo es traer productos innovadores desde China
+            con precios accesibles, tecnología moderna y entrega confiable.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Productos Destacados</h2>
+        <div class="products">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04" alt="">
+                <h3>Mini Aspiradora USB</h3>
+                <p>Ideal para escritorios y autos. Compacta, potente y recargable.</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1580910051074-7b7c1c8b9e0f" alt="">
+                <h3>Lámpara LED Inteligente</h3>
+                <p>Control por app, bajo consumo y múltiples colores.</p>
+                <button>Comprar</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1518441988-5c1a1b4e5f45" alt="">
+                <h3>Audífonos Bluetooth</h3>
+                <p>Sonido HD, batería duradera y diseño ergonómico.</p>
+                <button>Comprar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Importadora Global · Todos los derechos reservados
+    </div>
+</div>
+
+</body>
+</html>
